@@ -1,9 +1,13 @@
-# DHCP - Diabetes Health Care Programme
+# Cardiac Arrest Risk Detection Programme
 
 
-https://github.com/user-attachments/assets/bbc1fe6c-6ac4-480c-a332-9d2aefdf23d3
+![cardiac](https://github.com/user-attachments/assets/5324d986-0da6-4720-8bd9-3f9515292728)
 
-DHCP or Diabetes Health Care Programme is an integrated healthcare application focused on Diabetes and its health implications. Unlike normal detection or prediction software, DHCP uses Generative AI (Gemini) which produces responses and data in real time. What more? You get a completely interactive and real-time chatbot named Capsule. You have any doubts regarding symptoms, medical dosage, health implications, side effects or anything that comes to your mind, Capsule will answer you tirelessly.
+
+Cardiac arrest, an abrupt cessation of cardiac activity, can evoke apprehension. Understanding its pathophysiology and imperative interventions for patients in distress is paramount. Upon the onset of cardiac arrest, blood flow to the body and brain diminishes rapidly. Early recognition and management improve survival chances. Automated External Defibrillators (AEDs) administer life-saving shocks, returning erratic heartbeats to a normal rhythm. 
+
+Driven by cutting-edge technology, artificial intelligence offers immense potential in safeguarding cardiac health. With groundbreaking algorithms, AI can analyze data swiftly to determine subtleties often difficult for doctors, recognizing unusual rhythms in electrocardiograms before events escalate into with cardiac arrest. Utilizing complex modeling, AI foreputs both refined prognostic assessments and efficient incident response capabilities enabling the provision of primoires ensuring optimal patient well-being among those at peril through mitigatory preventative checkups unaware of concealed underlying contexts accentuated these enhancements
+
 
 ## Tech Used:
 - Python (3.12 or higher)
