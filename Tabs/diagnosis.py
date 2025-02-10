@@ -366,8 +366,8 @@ def app(df, X, y):
                         else:
                             st.success("No diabetes detected")
                             st.info("Maintain a healthy lifestyle.")
-
-                        st.write(f"Prediction confidence: {confidence*100:.2f}%")
+                        confidence = confidence*100
+                        st.write(f"Prediction confidence: {confidence:.2f}%")
 
                     except Exception as e:
                         st.error(f"Error processing the data: {str(e)}")
