@@ -7,7 +7,10 @@ import streamlit as st
 @st.cache_data()
 
 def load_data():
-    df=pd.read_csv('cardiac_risk.csv')
+    # df=pd.read_csv('cardiac_risk.csv')
+    url = ' https://docs.google.com/spreadsheets/d/1fElncOrx03marELtaA76MdFjJCz_y3WC1waz7Ft3tRc/edit?usp=sharing'
+    path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
+    df = pd.read_csv(path)
     X = df[["Gender","Chain_smoker","Consumes_other_tobacco_products","HighBP","Obese","Diabetes","Metabolic_syndrome","Use_of_stimulant_drugs","Family_history","History_of_preeclampsia","CABG_history","Respiratory_illness"]]
     y = df['UnderRisk']
 
