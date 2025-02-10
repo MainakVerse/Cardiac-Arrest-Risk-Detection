@@ -323,7 +323,7 @@ def app(df, X, y):
                         for col in required_columns:
                             df_processed[col] = pd.to_numeric(df_processed[col], errors='coerce')
                         
-                        df_processed['Pregnancies'] = df_processed['Pregnancies'].fillna(0).astype(int)
+                        
 
                         # Extract features for prediction
                         features = [
