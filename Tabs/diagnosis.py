@@ -11,6 +11,10 @@ import google.generativeai as genai
 
 load_dotenv()
 
+url = ' https://docs.google.com/spreadsheets/d/1fElncOrx03marELtaA76MdFjJCz_y3WC1waz7Ft3tRc/edit?usp=sharing'
+path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
+df = pd.read_csv(path)
+
 # Load API Key from Streamlit secrets
 GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 
