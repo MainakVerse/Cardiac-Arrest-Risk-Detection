@@ -8,6 +8,7 @@ import os
 import csv
 from dotenv import load_dotenv
 import google.generativeai as genai
+from datetime import datetime
 
 load_dotenv()
 
@@ -391,6 +392,9 @@ def app(df, X, y):
 
         x = len(df)
         st.write('Updated data points:',x)
+        st.write('Last Entry:', df.iloc[-1])
+        last_run_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        st.write(f"**Last server run:** {last_run_time}")
 
         # Create a section for columns description
         st.subheader("Columns Description:")
