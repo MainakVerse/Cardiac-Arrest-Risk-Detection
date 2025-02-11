@@ -389,6 +389,9 @@ def app(df, X, y):
         with st.expander("View data"):
             st.dataframe(df)
 
+        x = len(df)
+        st.write('Updated data points:',x)
+
         # Create a section for columns description
         st.subheader("Columns Description:")
 
