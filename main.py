@@ -23,8 +23,10 @@ st.sidebar.title('Navigation')
 
 page = st.sidebar.radio("Page", list(Tabs.keys()))
 st.sidebar.info('Made with 💙 by Mainak')
-display_restart_info()
-st.write("This app will automatically reset every 24 hours! ⏳")
+
+with expander("app logs"):
+    display_restart_info()
+    st.write("This app will automatically reset every 24 hours! ⏳")
 df, X, y = load_data()
 
 if page in ["Diagnosis"]:
