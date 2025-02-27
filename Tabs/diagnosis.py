@@ -362,7 +362,7 @@ def app(df, X, y):
                             # Call Gemini to generate medication recommendations
                             medication_info = get_gemini_medication_recommendation(disease_type, patient_data)
 
-                            st.info("Gemini AI Recommended Medication:")
+                            st.info("AI Recommended Medication:")
                             st.write(medication_info)
                         else:
                             st.success("No diabetes detected")
